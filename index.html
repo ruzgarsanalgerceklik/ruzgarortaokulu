@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Göbeklitepe VR – BİLSEM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Üst Logo -->
+<div id="logoBox">
+    <img src="logo.png" id="logo" alt="Diyarbakır Bilim ve Sanat Merkezi Logosu">
+</div>
+
+<!-- Üst Açılır Menü -->
+<div id="menu">
+    <button class="menuBtn" onclick="changeScene('2ab7166d45')">Göbeklitepe 1</button>
+    <button class="menuBtn" onclick="changeScene('43fb2c1ed3')">Göbeklitepe 2</button>
+    <button class="menuBtn" onclick="changeScene('6a9dc93f2e')">Göbeklitepe 3</button>
+</div>
+
+<!-- VR Çerçevesi -->
+<iframe id="vrframe"
+    src="https://www.360tr.com/embed.php?vid=2ab7166d45"
+    allow="accelerometer; fullscreen; vr; xr-spatial-tracking"
+    allowfullscreen webkitallowfullscreen mozallowfullscreen>
+</iframe>
+
+<!-- Tam Ekran Butonu -->
+<button id="fullscreenBtn">Tam Ekran VR</button>
+
+<script src="script.js"></script>
+</body>
+</html>
